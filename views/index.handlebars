@@ -9,9 +9,9 @@
       <div class="col-mid-4">
         <h3>Aimed and ready!</h3>
         <ul>
-          {{#each cats}}
-          {{#if sleepy}}
-          {{> cats/cat-block sleep=false}}
+          {{#each burgers}}
+          {{#if fired}}
+          {{> burgers/burger-block fired=false}}
           {{/if}}
           {{/each}}
         </ul>
@@ -35,9 +35,9 @@
       <div class="col-mid-4">
         <h2>Fired!</h2>
         <ul>
-          {{#each cats}}
-          {{#unless sleepy}}
-          {{> cats/cat-block sleep=true}}
+          {{#each burgers}}
+          {{#unless fired}}
+          {{> burgers/burger-block sleep=true}}
           {{/unless}}
           {{/each}}
         </ul>
