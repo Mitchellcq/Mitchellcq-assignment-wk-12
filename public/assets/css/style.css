@@ -24,10 +24,10 @@ li {
 
 .container {
   margin-top: 30px;
-  background: rgb(45, 82, 56);
+  background: rgb(32, 131, 62);
 }
 
-#title {
+.title {
   text-align: center;
 }
 
@@ -35,10 +35,10 @@ h2 {
   text-align: center
 }
 
-img {
-  margin-left: 630px
+#wrapper {
+  background: rgb(32, 131, 62);
 }
 
-#wrapper {
-  background: rgb(45, 82, 56)
+body {
+  background: rgb(32, 131, 62);
 }

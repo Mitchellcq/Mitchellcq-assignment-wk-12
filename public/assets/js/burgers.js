@@ -1,8 +1,9 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function () {
   $(".change-fired").on("click", function (event) {
+    console.log($(this).data());
     var id = $(this).data("id");
-    var shootHer = $(this).data("shootHer");
+    var shootHer = $(this).data("shoother");
 
     var shotOrNot = {
       fired: shootHer
@@ -27,7 +28,7 @@ $(function () {
 
     var newBurger = {
       name: $("#ca").val().trim(),
-      fired: $("[name=fired]:checked").val().trim()
+      fired: false,
     };
 
     // Send the POST request.

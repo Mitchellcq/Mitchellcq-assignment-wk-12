@@ -1,22 +1,26 @@
 <div id="wrapper">
 
-  <h1 id="title">Gun Burger!</h1>
-  <img
-    src="https://vignette.wikia.nocookie.net/spongebob/images/d/d4/Krabby_Patty_transparentpng.png/revision/latest/scale-to-width-down/350?cb=20170310181007"
-    alt="">
+  <h1 class="title">Gun Burger!</h1>
+  <p class="title"><em>A taste of Freedom</em></p>
+
+  <div class="d-flex justify-content-center">
+    <img src="https://i2.wp.com/freepngimages.com/wp-content/uploads/2016/11/bacon-burger.png?w=350"
+      class="mx-auto d-block" alt="burger">
+  </div>
+
   <div class="container">
     <div class="row">
-      <div class="col-mid-4">
+      <div class="col-sm">
         <h3>Aimed and ready!</h3>
         <ul>
           {{#each burgers}}
-          {{#if fired}}
-          {{> burgers/burger-block fired=false}}
-          {{/if}}
+          {{#unless fired}}
+          {{> burgers/burger-block fired=true}}
+          {{/unless}}
           {{/each}}
         </ul>
       </div>
-      <div class="col-mid-4">
+      <div class="col-sm">
         <h2>Lock and Load!</h2>
         <form class="create-form">
 
@@ -25,20 +29,16 @@
             <input type="text" id="ca" name="name">
           </div>
 
-          <div class="form-group">
-            <input type="radio" name="sleepy" class="circle" value="1" checked><br>
-          </div>
-
           <button type="submit">Chamber the Cartridge!</button>
         </form>
       </div>
-      <div class="col-mid-4">
+      <div class="col-sm">
         <h2>Fired!</h2>
         <ul>
           {{#each burgers}}
-          {{#unless fired}}
-          {{> burgers/burger-block sleep=true}}
-          {{/unless}}
+          {{#if fired}}
+          {{> burgers/burger-block fired=false}}
+          {{/if}}
           {{/each}}
         </ul>
       </div>
