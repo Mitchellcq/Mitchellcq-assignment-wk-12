@@ -25,7 +25,7 @@ Each burger in the waiting area also has a button. When the user clicks it, the 
 
 ## Deployed Application
 
-Click here to visit the deployed application.
+[Click here](https://stormy-earth-96588.herokuapp.com/) to visit the deployed application.
 
 *Images of the deployed application on Heroku:*
 
