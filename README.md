@@ -2,7 +2,12 @@
 
 ## Description:
 
-An express application for recording notes.
+Gun Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.
+
+Whenever a user submits a burger's name, your app will display the burger on the left side of the page -- waiting to be devoured.
+
+Each burger in the waiting area also has a button. When the user clicks it, the burger will move to the right side of the page.
+
 ## Table of Contents
 * [Installation](#installation)
 * [License](#license)
@@ -20,13 +25,16 @@ An express application for recording notes.
 
 ## Deployed Application
 
+Click here to visit the deployed application.
+
 *Images of the deployed application on Heroku:*
 
-![image](https://user-images.githubusercontent.com/68998298/97869027-d4429300-1d64-11eb-87a1-585ded2a2dae.png)
+![image](https://user-images.githubusercontent.com/68998298/99217620-9cd7ea00-282c-11eb-864c-1fe5499fc78f.png)
 
     ---
 
-![image](https://user-images.githubusercontent.com/68998298/97874972-e248e180-1d6d-11eb-8e74-e2179b0b51f1.png)
+![image](https://user-images.githubusercontent.com/68998298/99217658-b416d780-282c-11eb-9b32-62315ac4e063.png)
+
 
 ## Questions?
 
